@@ -62,16 +62,28 @@ body {
   /* The body's bg color will be #333 */
   body {
     background-color: #333;
-    padding: 5px;
-    margin: 20px;
+    padding: 25px;
     float: left;
     overflow: hidden;
+  }
+
+  .main-content {
+    margin: auto;
+    float: left;
+  }
+
+  .sidebar {
+    float: left;
+    margin-top: 20px;
   }
 
   /* The wrapper's width will be 600px */
   .wrapper {
     width: 600px;
+    float: left;
+    overflow: hidden;
+    padding: 50px;
+    margin: 0 auto;
   }
 }
-.main-content {width: 8.33%;}
-.sidebar {width: 16.66%;}
+
