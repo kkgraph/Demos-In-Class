@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scratch doc</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+    //-Let's start by grabbing a reference to the <span> below
+    var userText = document.getElementById("user-text");
+
+    //Next we give Javascript a function to execute when onkeyup event fires
+    document.onkeyup = function(event) {
+        userText.textContent = event.key;
+    };
+    
+    </script>
+    <!--this is the div that corresponds with above-->
+<div class="row">
+    <div class="col-md-off-3 col-m-8">
+        <span id="user-text"></span>
+    </div>
+</div>
+</body>
+</html>
