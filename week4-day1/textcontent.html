@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .fancy {
+        font-size: 100px;
+        color: green;
+    }
+    </style>
+</head>
+<body>
+    <div id="empty-div"> </div>
+
+    <script type="text/javascript">
+    var targetDiv = document.getElementById("empty-div");
+
+    targetDiv.textContent = "Hello friends!";
+
+    //but a second one will override it...
+
+    //In this example, we instead create a new div called "newDiv"
+
+    var newDiv = document.createElement("div");
+
+    //we then give this newDiv the text "a pleasure to meet you!"
+
+    newDiv.textContent = "A pleasure to meet you!";
+
+    //now we use the .appendchild method to add it
+
+    targetDiv.appendChild(newDiv);
+
+    //we then apply that CSS to our newDiv. This takes "class" and sets it "fancy" in css.
+
+    newDiv.setAttribute("class", "fancy");
+
+
+    </script>
+</body>
+</html>
